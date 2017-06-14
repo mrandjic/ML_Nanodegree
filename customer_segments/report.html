@@ -21146,9 +21146,14 @@ Sample point 2 predicted to be in Cluster 0
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>Answer:</strong></p>
-<p>Sample point 0: Assumed - Supermarket, Predicted - Supermarket
-Sample point 1: Assumed - Restaurant,  Predicted - Restaurant
-Sample point 2: Assumed - Supplier,    Predicted - Supplier</p>
+<p>When comparing feature value difference from our three samples to cluster centers from above, we may conslude how far are those sample points from this cluster centres:</p>
+<p>Sample point 0: It is more likely that this point will fall into Cluster 0 (Supermarket), because comparing the distance between those cluster centres and the sample point 0, we see that this point is closer to Cluster 0.</p>
+<p>Sample point 1: It is more likely that this point will fall into Cluster 1 (Restaurant), because comparing the distance between those cluster centres and the sample point 1, we see that this point is closer to Cluster 1.</p>
+<p>Sample point 2: It is more likely that this point will fall into Cluster 0 (Supermarket), because comparing the distance between those cluster centres and the sample point 2, we see that this point is closer to Cluster 0.</p>
+<p>If we run prediction algorithm, we will conclude that we were right about our assumptions for clusters these points belong to:</p>
+<p>Sample point 0: Assumed - Supermarket, Predicted - Supermarket</p>
+<p>Sample point 1: Assumed - Restaurant,  Predicted - Restaurant</p>
+<p>Sample point 2: Assumed - Supplier,    Predicted - Supplier</p>
 <p>From the comparison stated above, we may conclude our initial assumptions are matching the output of this model, which is a great result.</p>
 
 </div>
@@ -21193,6 +21198,8 @@ Sample point 2: Assumed - Supplier,    Predicted - Supplier</p>
 <p>Our model has detected two categories: Cluster 0 - Supplier/Supermarket and Cluster 1 - Restaurant.</p>
 <p>The customers from the Cluster 0(Supplier/Supermarket) are more likely to react positively to change in delivery service, because of variety of available types of products in larger quantities, which may not require more frequent delivery service.</p>
 <p>The customers from the Cluster 1(Restaurant) are more likely not to react positively to change in delivery sevice, because these customers demand fresh food to be delivered as frequent as possible.</p>
+<p>Using this information, we can run A/B test and attempt to generalize our conclusions.
+Initially, we would choose a subset sample for each Cluster in order to evaluate feedback of the customers. In this way we can see when changing the delivering service might be critical or not, for each selected sample from clusters. If a significant trend is found in particular cluster for selected subset, it may lead us to conclusion that generally, samples belonging to that cluster would follow that trend as well. This conclusion may lead a company to make appropriate decisions that would positively affect their customers.</p>
 
 </div>
 </div>
