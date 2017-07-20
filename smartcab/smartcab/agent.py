@@ -26,12 +26,9 @@ class LearningAgent(Agent):
         ###########
         # Set any additional class parameters as needed		
 		#init value of t
-        self.t = 1		
-		#set random seed
-        random.seed(1000)
+        self.t = 1
 	
-
-			
+	
     def reset(self, destination=None, testing=False):
         """ The reset function is called at the beginning of each trial.
             'testing' is set to True if testing trials are being used
